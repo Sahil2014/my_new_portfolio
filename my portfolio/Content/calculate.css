@@ -1,0 +1,39 @@
+﻿.kaka {
+    border-width: 10px;
+    width: 100%;
+}.btnclr{
+     background-color:dodgerblue;
+ }
+
+
+.btn-wide {
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.oborder {
+    border: 2px solid red;
+    min-width: 100%;
+}
+
+.padding {
+    margin-top: 20px;
+    
+}
+.fizzbuzz{
+    color: forestgreen;
+    font-size: large;
+}
+.buzz {
+    color: blue;
+}
+.fizz {
+    color: red;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+

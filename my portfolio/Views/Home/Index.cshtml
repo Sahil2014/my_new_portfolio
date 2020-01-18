@@ -1,0 +1,716 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sahil</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- syntax highighter CSS-->
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeMidnight.css" rel="stylesheet" />
+    <!-- caclulations-->
+    <link href="~/Content/calculate.css" rel="stylesheet" />
+    <!-- Font Awesome CSS-->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <!-- Lightbox-->
+    <link href="~/Content/lightbox.min.css" rel="stylesheet" />
+    <!-- theme stylesheet-->
+    <link href="~/Content/style.default.css" rel="stylesheet" />
+    <!-- Custom stylesheet - for your changes-->
+    <link href="~/Content/custom1.css" rel="stylesheet" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+    
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+    <script src="://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+    <section id="intro" style="background-image: url('/img/ein-steig.jpg')" class="intro">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="container clearfix">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 mx-auto">
+                        <p class="italic">This is my portfolio!</p>
+                        <h1>I am a full stack.NET developer.</h1>
+                        <p class="italic">Here are my projects and coding Java script exercises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- intro end-->
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#intro" class="navbar-brand link-scroll"><p><h5>SAHIL SHARMA</h5></p></a>
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
+
+                        <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+                        <li class="nav-item"><a href="#exercise" class="nav-link link-scroll">Coding Exercises</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- about-->
+    <section id="about" class="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="heading">About me</h2>
+                    <p class="lead">Sahil Sharma</p>
+                    <p>I am a Greensboro based full-stack.NET developer .</p>
+                    <p> </p>
+                    <p> </p>
+                    <p>strong work ethics, positive approach are some of my plus points </p>
+                    <p>I am looking for a career in coding. </p>
+                    <p> </p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <p><img src="~/img/mypic.jpg" alt="" class="img-fluid "></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about end-->
+    <!-- Portfolio / gallery-->
+    <section id="portfolio" class="gallery">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <h2 class="heading">Portfolio</h2>
+                            <p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border" data-toggle="modal" data-target="#myModal"><img src="~/img/portfolio-1.jpg" alt="image" class="img-fluid"></a></div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-2.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-4.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-4.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-5.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-5.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-6.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-6.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-7.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-7.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-8.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-8.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><a href="~/img/portfolio-9.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-9.jpg" alt="image" class="img-fluid"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio / gallery end-->
+    <!-- coding exercises-->
+    <section id="exercise" class="gallery">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <h2 class="heading">Coding Exercises</h2>
+                            <p><h5>These are my Coding exercises. I have used Bootstrap, Javascript, jquery and Visual Studio for designing and development. </h5></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#myModal"><img src="~/img/mathsf.jpg" alt="image" class="img-fluid"></>
+                            </div>
+                            <span>Performed basic maths operations.</span>
+                        </div>
+
+
+
+                        <div class="col-md-4">
+                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#factModal"><img src="~/img/factf.png" alt="image" class="img-fluid"></></div>
+                            <span>Used 'for' loop to find factorial of a number.</span>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#palindromeModal"><img src="~/img/palindromef.jpg" alt="image" class="img-fluid"></></div>
+                            <span>used functions to check whether a word is palindrome or not.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#fbModal"><img src="~/img/fizzbuzzf.jpg" alt="image" class="img-fluid"></></div>
+
+                            <span>used for loop to print fizz buzz series.</span>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#soafModal"><img src="~/img/soaf.jpg" alt="image" class="img-fluid"></></div>
+
+                            <span>used array and for loop for Sum of All Fears.</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- coding exercises end-->
+    <!-- contact-->
+    <section id="contact" style="background-color: #fff;" class="text-page pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="heading">Contact</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form id="contact-form" method="post" action="#" class="contact-form">
+                                <div class="controls">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name">Your firstname *</label>
+                                                <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="surname">Your lastname *</label>
+                                                <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname">Your email *</label>
+                                        <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="surname">Your message for us *</label>
+                                        <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
+                            <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+                            <p class="social"><a href="https://www.facebook.com/" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="https://www.instagram.com/" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="map"></div>
+    <footer style="background-color: #111;">
+        <div class="container">
+            <div class="row copyright">
+                <div class="col-md-6">
+                    <p class="mb-md-0 text-center text-md-left">&copy;2020 Sahil Sharma/Coder Foundry</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="credit mb-md-0 text-center text-md-right">Template by <a href="://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form">Bootstrapious</a></p>
+                    <!-- Please do not remove the backlink to us. It is part of the licence conditions. Thanks for understanding :)-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Modals go here-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <span class="h4">Math Operations.</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h3>Enter five numbers and you will get sum, product, mean, greatest and smallest of all. </h3></p>
+                        </div>
+                    </div>
+                    <div class="row kaka">
+                        <div class="col-md-offset-1 col-md-2">
+                            <input class="form-control numsOnly" id="n1" placeholder="Number 1" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="n2" placeholder="Number 2" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="n3" placeholder="Number 3" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="n4" placeholder="Number 4" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="n5" placeholder="Number 5" />
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-offset-1 col-md-2">
+                            <button id="mthadd" class="btn btn-success">Addition</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="mthmul" class="btn btn-success">Product</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="mthavg" class="btn btn-success">Average</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="mthmin" class="btn btn-success">Smallest</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="mthmax" class="btn btn-success">Largest</button>
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+                            <button id="runall" class="btn btn-success btn-wide text-center">Press for all Calculations.</button>
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-offset-4 col-md-4 col-md-offset-4">
+                            <button id="clrall" class="btn btn-success btn-wide">Clear</button>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-offset-1 col-md-10 padding">
+                            <p id="mthOutput"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="showmathcode" class="btn btn-success">Show Code</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-offset-2 col-md-4">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre id="mathcode" class="brush: js"> 
+var [num1, num2, num3, num4, num5] = [0, 0, 0, 0, 0];
+    
+    
+    function add5num(num1, num2, num3, num4, num5) {
+        return num1 + num2 + num3 + num4 + num5;
+
+    }
+    function mul5num(num1, num2, num3, num4, num5) {
+        return num1 * num2 * num3 * num4 * num5;
+
+    }
+   
+
+</pre>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="factModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <span class="h4">Factorial function</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h5>Enter a number and i will give you its factorial e.g. factorial of 4 is 4*3*2*1=24. </h5></p>
+                        </div>
+
+                        <div class="row kaka padding">
+                            <div class="col-md-offset-2 col md-3 padding">
+                                <input class="form-control numsOnly" id="factinput" placeholder="Add any integer" />
+                            </div>
+
+
+                            <div class="col-md-offset-1 col md-3 col-md-offset-1 padding">
+                                <button id="facto" class="btn btn-success">Result</button>
+                            </div>
+
+
+                            <div class="col-md-offset-1 col md-3 padding">
+                                <button id="clrfact" class="btn btn-success">Clear</button>
+                            </div>
+                        </div>
+                        <div class="row kaka padding">
+                            <div class="col-md-offset-1 col md-4 col-md-offset-4">
+                                <p id="factoutput"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="showfactcode" class="btn btn-success">Show Code</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin:auto">
+                        <div class="row">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre id="factcode" class="brush: js"> 
+function factorial() {
+
+        nu = parseFloat($("#factinput").val());
+
+        fact = 1;
+        for (i = 1; i <= nu; i++) {
+            fact *= i;
+
+        }
+        return fact;
+
+
+</pre>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="palindromeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <span class="h4">Palindrome</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h3>Enter a word or string to check whether its palindrome or not. </h3></p>
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-6">
+                            <input class="form-control" id="palinput" placeholder="Enter word or string to be tested." />
+                        </div>
+
+                        <div class="col-md-6">
+                            <button id="palindrome" class="btn btn-success">click for result</button>
+                        </div>
+
+                    </div>
+
+                    <div class="row kaka padding">
+                        <div class="col-md-6 padding">
+                            <button id="clrpalindrome" class="btn btn-success">Clear</button>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-offset-1 col-md-10 padding">
+                            <p id="paloutput"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="showpalcode" class="btn btn-success">Show Code</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre id="palcode" class="brush: js">  $("#palindrome").on("click", function () {
+        var palin = $("#palinput").val().toLowerCase();
+        palin = palin.replace(/\s/g, "");
+
+        repalin = palin.split("").reverse("").join("");
+        let msg = "";
+        if (palin == repalin) {
+            msg = 'it is a palindrome'
+        } else { msg = `it is not a palindrome` }
+        $("#paloutput").text(msg)
+
+
+</pre>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fbModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <span class="h4">FizzBuzz Challenge</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h5> Enter two numbers and I will check which of numbers from 1 to 100 are divided by first number, by second number and by both of the numbers by printing Fizz, Buzz and FizzBuzz respectively.</h5></p>
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-offset-1 col-md-5">
+                            <input class="form-control numsOnly" id="fbinput1" placeholder="add integer1" />
+                        </div>
+                        <div class="col-md-5">
+                            <input class="form-control numsOnly" id="fbinput2" placeholder="add integer2" />
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-offset-1 col-md-10 col-md-offset-1 ">
+                            <button id="fbout" class="btn btn-success">Result</button>
+                        </div>
+                    </div>
+                    <div class="row kaka padding">
+                        <div class="col-md-offset-1 col-md-10 col-md-offset-1 ">
+                            <button id="clrfb" class="btn btn-success">Clear</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row padding">
+                        <div class="col-md-12 ">
+                            <p id="fboutput"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="showfbcode" class="btn btn-success">Show Code</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre id="fbcode" class="brush: js">  $("#fbout").on("click", function () {
+        fbnum1 = parseInt($("#fbinput1").val());
+        fbnum2 = parseInt($("#fbinput2").val());
+        let outa = [];
+        for (i = 1; i <= 100; i++) {
+            if (i % fbnum1 == 0 && i % fbnum2 == 0) {
+                outa.push('<span class="fizzbuzz">FizzBuzz </span>');
+            } else if (i % fbnum1 == 0) {
+                outa.push('<span class="fizz">Fizz</span>');
+            } else if (i % fbnum2 == 0) {
+                outa.push('<span class="buzz">Buzz</span>');
+            } else { outa.push(i); }
+        }
+        out = outa.join(' ');
+
+        $("#fboutput").html(out);
+    });
+
+</pre>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="soafModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <span class="h4">Sum Of All Fears.</span>
+                </div>
+                <div class="modal-body">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <p><h5>SOAF challenge involves an array of numbers and an integer value K. If K can be derived by adding two number from the array then it is said to contain that K value.  If given an array=[10,4,6,7] and a K value of 17. The array contains the K value because 10+7=K</h5></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h6>Create a searchable array of 6 numbers below</h6></p>
+                        </div>
+                    </div>
+                    <div class="row kaka">
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi1" placeholder="" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi2" placeholder="" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi3" placeholder="" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi4" placeholder="" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi5" placeholder="" />
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="soafi6" placeholder="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><h6>Establish a K value by entering a number below</h6></p>
+                        </div>
+                    </div>
+                    <div class="row kaka">
+                        <div class="col-md-2">
+                            <input class="form-control numsOnly" id="ki" placeholder="" />
+                        </div>
+
+                    </div>
+                    <div class="row padding">
+                        <div class="col-md-2">
+                            <button id="soafsearch" class="btn btn-success">Search</button>
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <button id="clrsoaf" class="btn btn-success ">Clear</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10 padding">
+                            <p id="soafoutput"><h6></h6></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" id="showsoafcode" class="btn btn-success">Show Code</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <pre id="soafcode" class="brush: js">
+ for (i = 0; i < array.length; i++)
+     {
+      check = k - array[i];
+      for (j = i + 1; j < array.length - i; j++) {
+       if (check == array[j]) {
+   let soaftext = `The number ${k} was found by adding ${array[i]} and ${array[j]}`;
+         $("#soafoutput").text(soaftext);
+         return;
+                }
+            }
+        }
+
+</pre>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+        </div>
+
+    <!-- JavaScript files-->
+
+
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery.cookie.js"></script>
+    <script src="~/Scripts/lightbox.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <script src="~/Scripts/front.js"></script>
+    <script src="~/Scripts/calculations2.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+</body>
+</html>
