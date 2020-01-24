@@ -1,11 +1,12 @@
-﻿$(function () {
+﻿
+$(function () {
     $("#mathcode").hide();
     $("#factcode").hide();
     $("#palcode").hide();
     $("#fbcode").hide();
     $("#soafcode").hide();
-
-    $("#showmathcode").on("click", function () {
+  
+        $("#showmathcode").on("click", function () {
         if ($(this).text() == "Show Code") {
             $(this).text("Hide Code")
         }
