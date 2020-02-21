@@ -1,6 +1,4 @@
-﻿
-
-$(function () {
+﻿$(function () {
     $("#mathcode").hide();
     $("#factcode").hide();
     $("#palcode").hide();

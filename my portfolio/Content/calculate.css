@@ -31,6 +31,51 @@
 .fizz {
     color: red;
 }
+.sectionpadding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 0px;
+    
+}
+.lcontainer {
+    position: relative;
+    width: 50%;
+}
 
+.limage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.lmiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lcontainer:hover .limage {
+    opacity: 0.3;
+}
+
+.lcontainer:hover .lmiddle {
+    opacity: 1;
+}
+
+.ltext {
+    background-color: gray;
+    color: black;
+    font-size: 20px;
+    font-style:italic;
+    padding: 16px 32px;
+}
 
 

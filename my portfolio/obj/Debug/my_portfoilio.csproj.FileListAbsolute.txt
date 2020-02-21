@@ -150,7 +150,7 @@ C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\System.Web.WebPage
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\Newtonsoft.Json.xml
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\Antlr3.Runtime.pdb
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my_portfoilio.csprojAssemblyReference.cache
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my_portfoilio.csproj.CopyComplete
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my portfolio.dll
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my portfolio.pdb
+C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my_portfoilio.csprojAssemblyReference.cache

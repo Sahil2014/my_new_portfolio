@@ -28,8 +28,8 @@
     <!-- Custom stylesheet - for your changes-->
     <link href="~/Content/custom1.css" rel="stylesheet" />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="~/img/favicon.png">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico"/>
+
     <!-- Leaflet CSS - For the map-->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
     <!-- Tweaks for older IEs-->
@@ -57,7 +57,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a href="#intro" class="navbar-brand link-scroll"><p><h5>SAHIL SHARMA</h5></p></a>
+                <a href="#intro" class="navbar-brand link-scroll"><p><h4>SAHIL SHARMA</h4></p></a>
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
@@ -73,44 +73,62 @@
         </nav>
     </header>
     <!-- about-->
-    <section id="about" class="text">
+    <section id="about" class="sectionpadding" style="max-height:1000px">
         <div class="container clearfix">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12 offset-4">
                     <h2 class="heading">About me</h2>
-                    <p class="lead">Sahil Sharma</p>
-                    <p>I am a Greensboro based full-stack.NET developer .</p>
-                    <p> </p>
-                    <p> </p>
-                    <p>strong work ethics, positive approach are some of my plus points </p>
-                    <p>I am looking for a career in coding. </p>
-                    <p> </p>
                 </div>
-                <div class="col-lg-6">
-                    <p><img src="~/img/mypic.jpg" alt="" class="img-fluid "></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <p class="text-bold" style="font-size:34px">Sahil Sharma</p>
+                    <div class="text-bold" style="font-size:28px">I'm a full-stack .NET developer. I graduated from Coder Foundry in March 2020 where I learned the Net Framework v. 4.6.1, MVC5, C#,  BOOTSTRAP, JS & jQuery,LINQ, SQL, Entity Framework, jQuery DataTables and more. I have keen intrest in coding. Below you'll find some of my projects and coding challenges I've completed.</div>
+                    @*<p> </p>
+                        <p> </p>
+                        <p>strong work ethics, positive approach are some of my plus points </p>
+                        <p>I am looking for a career in coding. </p>
+                        <p> </p>*@
+                </div>
+                <div class="col-lg-3">
+                    <p><img src="~/img/mypic.jpg" alt="" class="img-fluid" style="max-height:400px"></p>
                 </div>
             </div>
         </div>
     </section>
     <!-- about end-->
     <!-- Portfolio / gallery-->
-    <section id="portfolio" class="gallery">
+    <section id="portfolio" class="gallery sectionpadding">
         <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-12 offset-4">
+                    <h2 class="heading">Portfolio</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="heading">Portfolio</h2>
-                            <p>Put your portfolio or gallery images here for example. Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+
+                            <div class="text-bold" style="font-size:28px">
+                                Have a look at applications developed by me. </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="box"><a href="~/img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border" data-toggle="modal" data-target="#myModal"><img src="~/img/portfolio-1.jpg" alt="image" class="img-fluid"></a></div>
+                        <div class="col-md-4 lcontainer">
 
+
+                            <a href="https://sahilbugtracker.azurewebsites.net/" data-title="Some footer information">
+                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
+                                <div class="lmiddle">
+                                    <div class="ltext bold">Bug Tracker</div>
+                                </div>
+
+                            </a>
                         </div>
                         <div class="col-md-4">
-                            <div class="box"><a href="~/img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-2.jpg" alt="image" class="img-fluid"></a></div>
+                            <div class="box"><a href="~/img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
                         </div>
                         <div class="col-md-4">
                             <div class="box"><a href="~/img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="~/img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
@@ -144,47 +162,86 @@
     </section>
     <!-- Portfolio / gallery end-->
     <!-- coding exercises-->
-    <section id="exercise" class="gallery">
+    <section id="exercise" class="gallery sectionpadding">
         <div class="container clearfix">
+            <div class="row">
+                <div class="col-lg-12 offset-4">
+                    <h2 class="heading">Coding Exercises</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-12 ">
-                            <h2 class="heading">Coding Exercises</h2>
-                            <p><h5>These are my Coding exercises. I have used Bootstrap, Javascript, jquery and Visual Studio for designing and development. </h5></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#myModal"><img src="~/img/mathsf.jpg" alt="image" class="img-fluid"></>
+
+                            <div class="text-bold" style="font-size:28px">
+                                These are my Coding exercises. I have used Bootstrap, Javascript, jquery and Visual Studio for designing and development. </h5></p>
                             </div>
-                            <span>Performed basic maths operations.</span>
-                        </div>
-
-
-
-                        <div class="col-md-4">
-                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#factModal"><img src="~/img/factf.png" alt="image" class="img-fluid"></></div>
-                            <span>Used 'for' loop to find factorial of a number.</span>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#palindromeModal"><img src="~/img/palindromef.jpg" alt="image" class="img-fluid"></></div>
-                            <span>used functions to check whether a word is palindrome or not.</span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#fbModal"><img src="~/img/fizzbuzzf.jpg" alt="image" class="img-fluid"></></div>
+                        <div class="col-md-4 lcontainer">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#myModal">
+                                    <img src="~/img/mathsf.jpg" alt="image" class="img-fluid">
+                                    <div class="lmiddle">
+                                        <div class="ltext bold">Maths</div>
+                                    </div>
+                                </data-lightbox>
+                            </div>
 
-                            <span>used for loop to print fizz buzz series.</span>
                         </div>
-                        <div class="col-md-4">
-                            <div class="box"><data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#soafModal"><img src="~/img/soaf.jpg" alt="image" class="img-fluid"></></div>
 
-                            <span>used array and for loop for Sum of All Fears.</span>
+
+
+                        <div class="col-md-4 lcontainer">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#factModal">
+                                    <img src="~/img/factf.png" alt="image" class="img-fluid">
+                                    <div class="lmiddle">
+                                        <div class="ltext bold">Factotrial</div>
+                                    </div>
+                                </data-lightbox>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4 lcontainer">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#palindromeModal">
+                                    <img src="~/img/palindromef.jpg" alt="image" class="img-fluid">
+                                    <div class="lmiddle">
+                                        <div class="ltext bold">Palindrome</div>
+                                    </div>
+                                </data-lightbox>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 lcontainer">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#fbModal">
+                                    <img src="~/img/fizzbuzzf.jpg" alt="image" class="img-fluid">
+                                    <div class="lmiddle">
+                                        <div class="ltext bold">FizzBuzz</div>
+                                    </div>
+                                </data-lightbox>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 lcontainer">
+                            <div class="box">
+                                <data-lightbox ="image-1" data-title="Maths" class="has-border" data-toggle="modal" data-target="#soafModal">
+                                    <img src="~/img/soaf.jpg" alt="image" class="img-fluid">
+                                    <div class="lmiddle">
+                                        <div class="ltext bold">Sum Of All Fears</div>
+                                    </div>
+                                </data-lightbox>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -197,53 +254,29 @@
     <!-- coding exercises end-->
     <!-- contact-->
     <section id="contact" style="background-color: #fff;" class="text-page pb-4">
-        <div class="container">
+        <div class="container clearfix">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 offset-4">
                     <h2 class="heading">Contact</h2>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <form id="contact-form" method="post" action="#" class="contact-form">
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="name">Your firstname *</label>
-                                                <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="surname">Your lastname *</label>
-                                                <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Your email *</label>
-                                        <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="surname">Your message for us *</label>
-                                        <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
-                                    </div>
-                                    <div class="text-center">
-                                        <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-lg-6">
-                            <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                            <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                            <p class="social"><a href="https://www.facebook.com/" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="https://www.instagram.com/" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
-                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-bold" style="font-size:28px">
+                        Sahil Sharma
+                        Greensboro, NC
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-bold" style="font-size:28px">
+                        sharma.sahilsharma207@gmail.com
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div id="map"></div>
+
     <footer style="background-color: #111;">
         <div class="container">
             <div class="row copyright">
@@ -699,20 +732,271 @@ function factorial() {
 
     <!-- JavaScript files-->
 
-
+    
     <script src="~/Scripts/jquery.min.js"></script>
     <script src="~/Scripts/bootstrap.bundle.min.js"></script>
     <script src="~/Scripts/jquery.cookie.js"></script>
     <script src="~/Scripts/lightbox.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
     <script src="~/Scripts/front.js"></script>
-    <script src="~/Scripts/calculations2.js"></script>
+
     <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
     <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script src="~/Scripts/calculations2.js"></script>
     <script>
         SyntaxHighlighter.all();
     </script>
-   
-   
-</body>
-</html>
+    <!-- <script>
+            $(function () {
+                $("#mathcode").hide();
+                $("#factcode").hide();
+                $("#palcode").hide();
+                $("#fbcode").hide();
+                $("#soafcode").hide();
+                $("#showmathcode").on("click", function () {
+                    if ($(this).text() == "Show Code") {
+                        $(this).text("Hide Code")
+                    }
+                    else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
+                    $("#mathcode").toggle();
+
+                });
+                $("#showfactcode").on("click", function () {
+                    if ($(this).text() == "Show Code") {
+                        $(this).text("Hide Code")
+                    }
+                    else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
+                    $("#factcode").toggle();
+
+                });
+                $("#showpalcode").on("click", function () {
+                    if ($(this).text() == "Show Code") {
+                        $(this).text("Hide Code")
+                    }
+                    else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
+                    $("#palcode").toggle();
+
+                });
+                $("#showsoafcode").on("click", function () {
+                    if ($(this).text() == "Show Code") {
+                        $(this).text("Hide Code")
+                    }
+                    else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
+                    $("#soafcode").toggle();
+
+                });
+                $("#showfbcode").on("click", function () {
+                    if ($(this).text() == "Show Code") {
+                        $(this).text("Hide Code")
+                    }
+                    else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
+                    $("#fbcode").toggle();
+
+                });
+
+
+                var [num1, num2, num3, num4, num5] = [0, 0, 0, 0, 0];
+                var fact = 0;
+                $("#mthadd").on("click", function () {
+                    if (getinput()) {
+
+                        sum = add5num(num1, num2, num3, num4, num5);
+                        let msg = `the sum of five number is ${sum}`;
+                        $("#mthOutput").text(msg);
+                    }
+                });
+                $("#mthmul").on("click", function () {
+                    if (getinput()) {
+
+                        mul = mul5num(num1, num2, num3, num4, num5);
+                        let msg = `the product of five number is ${mul}`;
+                        $("#mthOutput").text(msg);
+                    }
+
+                });
+                $("#mthavg").on("click", function () {
+                    if (getinput()) {
+
+                        avg = add5num(num1, num2, num3, num4, num5) / 5;
+                        avg = avg.toPrecision(3);
+                        let msg = `the mean of five number is ${avg}`;
+                        $("#mthOutput").text(msg);
+                    }
+                });
+                $("#mthmin").on("click", function () {
+                    if (getinput()) {
+
+                        min = Math.min(num1, num2, num3, num4, num5);
+                        let msg = `the smallest of those five number is ${min}`;
+                        $("#mthOutput").text(msg);
+                    }
+                });
+                $("#mthmax").on("click", function () {
+                    if (getinput()) {
+
+                        max = Math.max(num1, num2, num3, num4, num5);
+                        let msg = `the largest of those five number is ${max}`;
+                        $("#mthOutput").text(msg);
+                    }
+                });
+                $("#runall").on("click", function () {
+                    if (getinput()) {
+                        sum = add5num(num1, num2, num3, num4, num5);
+                        avg = add5num(num1, num2, num3, num4, num5) / 5;
+                        max = Math.max(num1, num2, num3, num4, num5);
+                        mul = mul5num(num1, num2, num3, num4, num5);
+                        min = Math.min(num1, num2, num3, num4, num5);
+                        let msg = `the sum of five number is ${sum}</br>the product of five number is ${mul}</br > the mean of five number is ${avg}</br > the smallest of those five number is ${min}</br > the largest of those five number is ${max} `;
+                        $("#mthOutput").html(msg);
+                    }
+                });
+                $("#clrall").on("click", function () {
+                    clrall();
+                })
+
+                function getinput() {
+
+                    num1 = parseFloat($("#n1").val());
+                    num2 = parseFloat($("#n2").val());
+                    num3 = parseFloat($("#n3").val());
+                    num4 = parseFloat($("#n4").val());
+                    num5 = parseFloat($("#n5").val());
+                    let valid = num1 + num2 + num3 + num4 + num5;
+
+                    if (isNaN(valid)) {
+                        alert("enter numbers only");
+                        clrall();
+                    } return !isNaN(valid)
+
+
+                }
+                function clrall() {
+                    $("#n1").val("")
+                    $("#n2").val("")
+                    $("#n3").val("")
+                    $("#n4").val("")
+                    $("#n5").val("")
+                    $("#mthOutput").text("")
+                }
+                function add5num(num1, num2, num3, num4, num5) {
+                    return num1 + num2 + num3 + num4 + num5;
+
+                }
+                function mul5num(num1, num2, num3, num4, num5) {
+                    return num1 * num2 * num3 * num4 * num5;
+
+                }
+                $('input.numsOnly').on('keypress', function (key) {
+                    if (key.charCode < 45 || key.charCode > 57) {
+                        return false;
+                    }
+                });
+                $("#facto").on("click", function () {
+
+
+                    fact = factorial();
+                    let msg = `Factorial is: ${fact} `
+                    $("#factoutput").text(msg);
+                })
+                $("#clrfact").on("click", function () {
+
+                    $("#factinput").val("")
+                    $("#factoutput").text("")
+
+                })
+
+
+                function factorial() {
+
+                    nu = parseFloat($("#factinput").val());
+
+                    fact = 1;
+                    for (i = 1; i <= nu; i++) {
+                        fact *= i;
+
+                    }
+                    return fact;
+                }
+                $("#clrpalindrome").on("click", function () {
+
+                    $("#palinput").val("")
+                    $("#paloutput").text("")
+
+                });
+                $("#palindrome").on("click", function () {
+                    var palin = $("#palinput").val().toLowerCase();
+                    palin = palin.replace(/\s/g, "");
+
+                    repalin = palin.split("").reverse("").join("");
+                    let msg = "";
+                    if (palin == repalin) {
+                        msg = 'it is a palindrome'
+                    } else { msg = `it is not a palindrome` }
+                    $("#paloutput").text(msg)
+                });
+                $("#fbout").on("click", function () {
+                    fbnum1 = parseInt($("#fbinput1").val());
+                    fbnum2 = parseInt($("#fbinput2").val());
+                    let outa = [];
+                    for (i = 1; i <= 100; i++) {
+                        if (i % fbnum1 == 0 && i % fbnum2 == 0) {
+                            outa.push('<span class="fizzbuzz">FizzBuzz </span>');
+                        } else if (i % fbnum1 == 0) {
+                            outa.push('<span class="fizz">Fizz</span>');
+                        } else if (i % fbnum2 == 0) {
+                            outa.push('<span class="buzz">Buzz</span>');
+                        } else { outa.push(i); }
+                    }
+                    out = outa.join(' ');
+
+                    $("#fboutput").html(out);
+                });
+                $("#clrfb").on("click", function () {
+
+                    $("#fbinput1").val("")
+                    $("#fbinput2").val("")
+                    $("#fboutput").html("")
+
+                });
+                $("#soafsearch").on("click", function () {
+
+                    let array = new Array();
+                    array.push(parseInt($("#soafi1").val()));
+                    array.push(parseInt($("#soafi2").val()));
+                    array.push(parseInt($("#soafi3").val()));
+                    array.push(parseInt($("#soafi4").val()));
+                    array.push(parseInt($("#soafi5").val()));
+                    array.push(parseInt($("#soafi6").val()));
+
+
+
+                    let k = parseInt($("#ki").val());
+
+                    for (i = 0; i < array.length; i++) {
+                        check = k - array[i];
+                        for (j = i + 1; j < array.length - i; j++) {
+                            if (check == array[j]) {
+                                let soaftext = `The number ${k} was found by adding ${array[i]} and ${array[j]}`;
+                                $("#soafoutput").text(soaftext);
+                                return;
+                            }
+                        }
+                    }
+                });
+                $("#clrsoaf").on("click", function () {
+
+                    $("#soafi1").val("");
+                    $("#soafi2").val("");
+                    $("#soafi3").val("");
+                    $("#soafi4").val("");
+                    $("#soafi5").val("");
+                    $("#soafi6").val("");
+                    $("#ki").val("");
+                    $("#soafoutput").text("");
+                });
+            });
+
+            </script>-->
+    </body >
+    </html >
+ 

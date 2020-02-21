@@ -127,22 +127,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Start\img\about.jpg" />
-    <Content Include="App_Start\img\ein-steig.jpg" />
-    <Content Include="App_Start\img\favicon.png" />
-    <Content Include="App_Start\img\japan-mountains.jpg" />
-    <Content Include="App_Start\img\logo.png" />
-    <Content Include="App_Start\img\marker.png" />
-    <Content Include="App_Start\img\portfolio-1.jpg" />
-    <Content Include="App_Start\img\portfolio-2.jpg" />
-    <Content Include="App_Start\img\portfolio-3.jpg" />
-    <Content Include="App_Start\img\portfolio-4.jpg" />
-    <Content Include="App_Start\img\portfolio-5.jpg" />
-    <Content Include="App_Start\img\portfolio-6.jpg" />
-    <Content Include="App_Start\img\portfolio-7.jpg" />
-    <Content Include="App_Start\img\portfolio-8.jpg" />
-    <Content Include="App_Start\img\portfolio-9.jpg" />
-    <Content Include="App_Start\img\template-mac.png" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min.js" />
     <Content Include="Content\SyntaxHighlighter\shCore.css" />
@@ -164,18 +148,19 @@
     <Content Include="Content\SyntaxHighlighter\shThemeRDark.css" />
     <Content Include="img\factf.png" />
     <Content Include="img\factorial2.png" />
+    <Content Include="favicon.ico" />
     <Content Include="img\fizzbuzzf.jpg" />
     <Content Include="img\maths1.jpg" />
     <Content Include="img\mathsf.jpg" />
     <Content Include="img\palindromef.jpg" />
     <Content Include="img\soaf.jpg" />
+    <Content Include="img\software-bug.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\calculate.css" />
     <Content Include="Content\custom1.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\lightbox.min.css" />
     <Content Include="Content\style.default.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -271,10 +256,19 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="img\palindrome.webp" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - ReadOnly - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\SahilPortfolio - Web Deploy1.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
