@@ -4,12 +4,11 @@
     $("#palcode").hide();
     $("#fbcode").hide();
     $("#soafcode").hide();
-        $("#showmathcode").on("click", function () {
+    $("#showmathcode").on("click", function () {
         if ($(this).text() == "Show Code") {
             $(this).text("Hide Code")
         }
-        else if ($(this).text() == "Hide Code")
-        { $(this).text("Show Code") }
+        else if ($(this).text() == "Hide Code") { $(this).text("Show Code") }
         $("#mathcode").toggle();
 
     });
