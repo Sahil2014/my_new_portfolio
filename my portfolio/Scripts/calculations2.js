@@ -4,6 +4,7 @@
     $("#palcode").hide();
     $("#fbcode").hide();
     $("#soafcode").hide();
+   
 
     $("#showmathcode").on("click", function () {
         if ($(this).text() == "Show Code") {
@@ -104,7 +105,18 @@
     });
     $("#clrall").on("click", function () {
         clrall();
-    })
+    });
+    $("#closemath").on("click", function () {
+        //if ($("#showmathcode").text() == "Show Code") {
+        //    $("#showmathcode").text("Hide Code")
+        //}
+        //else if ($("#showmathcode").text() == "Hide Code") { $("#showmathcode").text("Show Code") }
+        clrall();
+        $("#mthOutput").val("");
+        $("#mathcode").hide();
+
+    });
+
 
     function getinput() {
 
@@ -155,7 +167,16 @@
         $("#factinput").val("")
         $("#factoutput").text("")
 
-    })
+    });
+    $("#closefact").on("click", function () {
+        //if ($("#showfactcode").text() == "Show Code") {
+        //    $("#showfactcode").text("Hide Code")
+        //}
+        //else if ($("#showfactcode").text() == "Hide Code") { $("#showfactcode").text("Show Code") }
+        $("#factinput").val("")
+        $("#factoutput").text("")
+        $("#factcode").hide();
+    });
 
 
     function factorial() {
@@ -174,6 +195,15 @@
         $("#palinput").val("")
         $("#paloutput").text("")
 
+    });
+    $("#closepal").on("click", function () {
+        //if ($("#showpalcode").text() == "Show Code") {
+        //    $("#showpalcode").text("Hide Code")
+        //}
+        //else if ($("#showpalcode").text() == "Hide Code") { $("#showpalcode").text("Show Code") }
+        $("#palinput").val("")
+        $("#paloutput").text("")
+        $("#palcode").hide();
     });
     $("#palindrome").on("click", function () {
         var palin = $("#palinput").val().toLowerCase();
@@ -210,6 +240,16 @@
         $("#fboutput").html("")
 
     });
+    $("#closefb").on("click", function () {
+        //if ($("#showpalcode").text() == "Show Code") {
+        //    $("#showpalcode").text("Hide Code")
+        //}
+        //else if ($("#showpalcode").text() == "Hide Code") { $("#showpalcode").text("Show Code") }
+        $("#fbinput1").val("")
+        $("#fbinput2").val("")
+        $("#fboutput").html("")
+        $("#fbcode").hide();
+    });
     $("#soafsearch").on("click", function () {
 
         let array = new Array();
@@ -223,16 +263,20 @@
 
 
         let k = parseInt($("#ki").val());
-
+        let soaftext=''
         for (i = 0; i < array.length; i++) {
             check = k - array[i];
             for (j = i + 1; j < array.length - i; j++) {
                 if (check == array[j]) {
-                    let soaftext = `The number ${k} was found by adding ${array[i]} and ${array[j]}`;
+                    soaftext = `The number ${k} was found by adding ${array[i]} and ${array[j]}`;
                     $("#soafoutput").text(soaftext);
                     return;
                 }
             }
+        }
+        if (soaftext === '') {
+            soaftext = `The number ${k} cannot be found by adding any two numbers of your given input`;
+            $("#soafoutput").text(soaftext);
         }
     });
     $("#clrsoaf").on("click", function () {
@@ -245,5 +289,20 @@
         $("#soafi6").val("");
         $("#ki").val("");
         $("#soafoutput").text("");
+    });
+    $("#closesoaf").on("click", function () {
+        //if ($("#showpalcode").text() == "Show Code") {
+        //    $("#showpalcode").text("Hide Code")
+        //}
+        //else if ($("#showpalcode").text() == "Hide Code") { $("#showpalcode").text("Show Code") }
+        $("#soafi1").val("");
+        $("#soafi2").val("");
+        $("#soafi3").val("");
+        $("#soafi4").val("");
+        $("#soafi5").val("");
+        $("#soafi6").val("");
+        $("#ki").val("");
+        $("#soafoutput").text("");
+        $("#soafcode").hide();
     });
 });
