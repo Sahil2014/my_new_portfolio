@@ -240,7 +240,7 @@
         $("#fboutput").html("")
 
     });
-    $("#closeb").on("click", function () {
+    $("#closefb").on("click", function () {
         //if ($("#showpalcode").text() == "Show Code") {
         //    $("#showpalcode").text("Hide Code")
         //}

@@ -154,3 +154,5 @@ C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my_portfoili
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my portfolio.dll
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my portfolio.pdb
 C:\Users\13363\source\repos\my_new_portfolio\my portfolio\obj\Debug\my_portfoilio.csprojAssemblyReference.cache
+C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\13363\source\repos\my_new_portfolio\my portfolio\bin\Microsoft.AspNet.Identity.Core.xml

@@ -1,6 +1,8 @@
 ﻿@{
     Layout = null;
 }
+@using my_portfolio.Models
+@model EmailModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,30 +92,42 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="social"><a href="https://github.com/Sahil2014" title="" class="twitter"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/sahil-sharma-8b771b62/" title="" class="twitter"><i class="fa fa-linkedin"></i></a></p>
+                    <p class="social"><a target="_blank" href="https://www.linkedin.com/in/sahil-sharma-8b771b62/" title="" class="twitter"><i class="fa fa-linkedin"></i></a><a href="mailto:sharma.sahilsharma207@gmail.com" title="" class="twitter"><i class="fa fa-envelope"></i></a></p>
                 </div>
 
             </div>
             <div class="row">
                 <div class="col-lg-12">
 
-                    <div class="text-bold" style="font-size:28px">I'm a full-stack .NET developer and graduated from Coder Foundry in March 2020 where I learned the Net Framework v. 4.6.1, MVC5, C#,  BOOTSTRAP, JS & jQuery, LINQ, SQL, Entity Framework, jQuery DataTables and more. Below you'll find some of my projects and coding challenges.</div>
+                    <div class="text-bold" style="font-size:28px">Hello, my name is Sahil Sharma and I am a full stack .NET developer and graduate of Coder Foundry's immersive boot camp. I am active in my job search for a development role where I can continue to sharpen my coding skills and be a key team contributor. Please feel free to browse through my portfolio site, built using: C#, MVC, HTML5, CSS3, Bootstrap, JS & jQuery.</div>
                     @*<p> </p>
-                        <p> </p>
-                        <p>strong work ethics, positive approach are some of my plus points </p>
-                        <p>I am looking for a career in coding. </p>
-                        <p> </p>*@
+                <p> </p>
+                <p>strong work ethics, positive approach are some of my plus points </p>
+                <p>I am looking for a career in coding. </p>
+                <p> </p>*@
                 </div>
-                <div class="col-lg-3">
-                    @*<p><img src="~/img/mypic.jpg" alt="" class="img-fluid" style="max-height:400px"></p>*@
-                </div>
+
             </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-lg-8 offset-4">
+                    <a target="_blank" href="~/img/Sahil Sharma Resume.pdf" title=""><img src="~/img/cv_PNG46.png" alt="..." class="indexpic" /><p style="font-size:36px;font-family:Arial;color:black">Check out my Resume.</p>  </a>
+                </div>
+
+            </div>
+            <hr />
+            <br />
+            <br />
         </div>
     </section>
     <!-- about end-->
     <!-- Portfolio / gallery-->
     <section id="portfolio" class="gallery sectionpadding">
+        <br />
+        <br />
         <div class="container clearfix">
+
             <div class="row">
                 <div class="col-lg-12 offset-4">
                     <h2 class="heading">Portfolio</h2>
@@ -131,50 +145,41 @@
                     </div>
                     <div class="row" style="padding-bottom:25px">
                         <div class="col-md-6 lcontainer">
-                            <a href="https://sahilbugtracker.azurewebsites.net/" data-title="Some footer information">
-                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
+                            <a target="_blank" href="https://sahilbugtracker.azurewebsites.net/" data-title="Some footer information">
+                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%;height:100%">
                                 <div class="lmiddle">
                                     <div class="ltext bold">Bug Tracker</div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-6 lcontainer">
-                            <a href="" data-title="Some footer information">
-                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
+                            <a target="_blank" href="https://financialportalmvc.azurewebsites.net/" data-title="Some footer information">
+                                <img src="~/img/incomeCosts (1).jpg" alt="Image" class="limage" style="width:100%;height:100%">
                                 <div class="lmiddle">
-                                    <div class="ltext bold">Waiting for link.</div>
+                                    <div class="ltext bold">Financial Portal</div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="row"style="padding-bottom:25px">
+                    <div class="row" style="padding-bottom:25px">
                         <div class="col-md-6 lcontainer">
-                            <a href="" data-title="Some footer information">
-                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
+                            <a target="_blank" href="https://financialportalwebapi.azurewebsites.net/ " data-title="Some footer information">
+                                <img src="~/img/API fin portal.jpg" alt="Image" class="limage" style="width:100%;height:100%">
                                 <div class="lmiddle">
-                                    <div class="ltext bold">Waiting for link.</div>
+                                    <div class="ltext bold">Financial Portal API</div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-md-6 lcontainer">
-                            <a href="" data-title="Some footer information">
-                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
+                            <a target="_blank" href="https://sahilblog.azurewebsites.net/" data-title="Some footer information">
+                                <img src="~/img/blog.jpg" alt="Image" class="limage" style="width:100%;height:100%">
                                 <div class="lmiddle">
-                                    <div class="ltext bold">Waiting for link.</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row"style="padding-bottom:25px">
-                        <div class="col-md-6 lcontainer">
-                            <a href="" data-title="Some footer information">
-                                <img src="~/img/software-bug.jpg" alt="Image" class="limage" style="width:100%">
-                                <div class="lmiddle">
-                                    <div class="ltext bold">Waiting for link.</div>
+                                    <div class="ltext bold">Blog Project</div>
                                 </div>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -276,39 +281,65 @@
     </section>
     <!-- coding exercises end-->
     <!-- contact-->
-    <section id="contact" style="background-color:ghostwhite;padding:0px">
+    <section id="contact" class="sectionpadding">
         <div class="container clearfix">
-            <div class="row">
-                <div class="col-lg-12 offset-4">
-                    <h2 class="heading">Contact</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 offset-4">
-                    <div class="text-bold" style="font-size:28px;align-content:center">
-                        Sahil Sharma<br />
-                        Greensboro, NC<br />
-                        sharma.sahilsharma207@gmail.com<br />
-                    </div>
-                </div>
-               
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="social"><a href="https://github.com/Sahil2014" title="" class="twitter"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/sahil-sharma-8b771b62/" title="" class="twitter"><i class="fa fa-linkedin"></i></a></p>
-                </div>
-
+        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+        <h4>Send me a message</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FromName, new { @class = "form-control dbba" })
+                @Html.ValidationMessageFor(m => m.FromName)
             </div>
         </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control dbba", placeholder = "example@email.com" })
+                @Html.ValidationMessageFor(m => m.FromEmail)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Subject, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Subject, new { @class = "form-control dbba" })
+                @Html.ValidationMessageFor(m => m.Subject)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(m => m.Body, new { @class = "form-control dbba" })
+                @Html.ValidationMessageFor(m => m.Body)
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-primary" value="Send" />
+            </div>
+        </div>
+    }
+            </div>
+       
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="social"><a target="_blank" href="https://www.linkedin.com/in/sahil-sharma-8b771b62/" title="" class="twitter"><i class="fa fa-linkedin"></i></a><a target="_blank"  href="mailto:sharma.sahilsharma207@gmail.com" title="" class="twitter"><i class="fa fa-envelope"></i></a></p>
+            </div>
+
+        </div>
+        
     </section>
 
     <footer style="background-color: #111;">
         <div class="container">
             <div class="row copyright">
                 <div class="col-md-6">
-                    <p class="mb-md-0 text-center text-md-left">&copy;2020 Sahil Sharma/Coder Foundry</p>
+                    <p class="mb-md-0 text-center text-md-left">&copy;2020 Sahil Sharma</p>
                 </div>
                
             </div>
@@ -377,7 +408,7 @@
                     </div>
                     <div class="row padding">
                         <div class="col-md-offset-1 col-md-10 padding">
-                            <h4 id="mthOutput"></h4>
+                            <h6 id="mthOutput"></h6>
                         </div>
                     </div>
                     <div class="row">

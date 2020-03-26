@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -119,11 +122,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,10 +151,14 @@
     <Content Include="Content\SyntaxHighlighter\shThemeMDUltra.css" />
     <Content Include="Content\SyntaxHighlighter\shThemeMidnight.css" />
     <Content Include="Content\SyntaxHighlighter\shThemeRDark.css" />
+    <Content Include="img\API fin portal.jpg" />
+    <Content Include="img\blog.jpg" />
+    <Content Include="img\cv_PNG46.png" />
     <Content Include="img\factf.png" />
     <Content Include="img\factorial2.png" />
     <Content Include="favicon.ico" />
     <Content Include="img\fizzbuzzf.jpg" />
+    <Content Include="img\incomeCosts %281%29.jpg" />
     <Content Include="img\maths1.jpg" />
     <Content Include="img\mathsf.jpg" />
     <Content Include="img\palindromef.jpg" />
@@ -247,7 +256,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -255,7 +263,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="img\palindrome.webp" />
+    <Content Include="img\Sahil Sharma Resume.pdf" />
     <None Include="packages.config" />
+    <Content Include="private.config" />
     <None Include="Properties\PublishProfiles\SahilPortfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\SahilPortfolio - FTP1.pubxml" />
     <None Include="Properties\PublishProfiles\SahilPortfolio - ReadOnly - FTP.pubxml" />

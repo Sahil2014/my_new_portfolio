@@ -71,11 +71,22 @@
 }
 
 .ltext {
-    background-color: gray;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 20px;
     font-style:italic;
     padding: 16px 32px;
+}
+.dbba {
+    width: 400px;
+}
+.vich{
+    padding-left:100px;
+}
+.indexpic {
+    max-height: 100px !important;
+    max-width: 100px !important;
+    margin-left:120px;
 }
 
 
